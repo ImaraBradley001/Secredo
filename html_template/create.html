@@ -1,0 +1,92 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Rubik&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/icon.png" type="image/header_section-icon">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>||Your Secret Diary</title>
+</head>
+<body>
+
+    <!--Header Section-->
+    <header id="header">
+        <a href="index.html">
+            <div class="logo">
+            <img src="images/icon.png" alt="">
+            <h1>Secredo</h1>
+        </div>
+        </a>
+        <p class="header-description">Your  <b>Secrets</b> Are <b>Safe</b> With <b>Us</b>!</p>
+        <nav>
+            <ul>
+                <li><a href="login.html" id="login-link">LogIn</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#features">Features</a></li>
+                <li><a href="journal.html" id="journal-btn">Journal</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <form action="" class="create-note">
+
+        <div class="mb-6">
+            <label for="title" class="inline-block text-lg mb-2">Title</label>
+            <input
+                type="text"
+                class="border border-gray-200 rounded p-2 w-full"
+                name="title"
+                placeholder="Eg A Very Wholesome Moment"
+            />
+        </div>
+
+
+        <div class="mb-6">
+            <label for="description" class="inline-block text-lg mb-2">Body</label>
+            <textarea class="border border-gray-200 rounded p-2 w-full" name="description" rows="10" placeholder="Describe what happened..."></textarea>
+        </div>
+
+        <div class="mb-6">
+            <label for="logo" class="inline-block text-lg mb-2">Attach a file for future reference (optional)</label>
+            <br>
+            <input type="file" class="rounded file-input" name="logo"/>
+        </div>
+
+        <div class="mb-6">
+            <button class="btn">
+                Add To Journal
+            </button>
+        </div>
+    </form>
+
+
+    <!--Footer Section-->
+    <footer class="bg-slate-600">
+        <a href="index.html"><h1>Secredo</h1></a>
+        <div class="social-media">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-whatsapp"></i>
+            <i class="fab fa-github"></i>
+        </div>
+        <div class="dev-contact">
+            <p>Contact Developer</p>
+            <i class="fa-solid fa-envelope"></i> <a href="mailto:devimara@gmail.com">Email</a>
+            <br>
+            <i class="fa-solid fa-phone"></i> +256 702 329 686
+            <p>Copyright Secredo Inc. 2022</p>
+        </div>
+    </footer>
+
+    <script src="./js/index.js"></script>
+    <script src="./js/load_header.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "name": "html_theme",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "build:css": "tailwind build src/main.css -o dist/main.css --watch"
+  },
+  "author": "",
+  "license": "ISC"
+}

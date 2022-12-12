@@ -1,0 +1,386 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*Typography*/
+body{
+    font-family: rubik;
+    font-size: 1em;
+    color: #686868;
+}
+
+h3{
+    font-family: Parisienne !important;
+    font-weight: 800;
+    font-size: 2.5em;
+    color: purple !important;
+    text-align: center;
+}
+
+.bottom-border{
+    border-bottom: 2px solid #686868;;
+}
+
+
+/*Layout*/
+.hidden-element{
+    visibility: hidden;
+    display: none;
+}
+
+/*Utilities*/
+i .fa {
+  display: inline-block;
+  border-radius: 60px;
+  box-shadow: 0 0 2px #888;
+  padding: 0.5em 0.6em;
+
+}
+
+
+a{
+    transition: 0.5s;
+}
+
+a:hover{
+    font-weight: 700;
+}
+
+
+.btn{
+    padding: 10px;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    border-radius: 5%;
+    background: #1F75FE;
+    color: white;
+    transition: 1s;
+}
+
+.btn:hover{
+    background: #0076CE;
+    font-weight: normal !important;
+}
+
+/*Header Section*/
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 100%;
+    border-bottom: 1px solid #f5ecec;
+    visibility: hidden;
+}
+
+header nav ul{
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+
+.logo{
+    display: flex;
+    flex-direction: row;
+}
+
+.logo h1{
+    font-size: 50px;
+    font-family: Parisienne;
+    font-weight: 700;
+    color: purple;
+}
+
+
+header p{
+    margin-top: 20px;
+}
+
+.banner-section{
+    background-image: url("../images/banner_big.jpg");
+    min-height: 500px;
+    background-position: center;
+    background-size: cover;
+    max-width: 100%;   
+    padding-top: 7rem;
+    padding-left: 4rem;
+    z-index: 1;
+}
+
+
+.lead{
+    font-size: 50px;
+    font-family: Parisienne;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.options{
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+
+@media (max-width: 550px){
+    header{
+        flex-direction: column;
+        align-items: center;
+        gap: 0px;
+    }
+
+    .logo h1{
+        font-size: 30px;
+        font-family: Parisienne;
+        font-weight: 700;
+        color: purple;
+    }
+
+    .logo img{
+        width: 40px;
+        height: 40px;
+    }
+
+
+    .banner-section{
+        color: #1d1b1b;
+        background: url(../images/banner_small.jpg);
+        padding-left: 0rem;
+        padding-top: 1rem;
+        min-height: 250px;
+        text-align: center;
+    }
+
+    .banner-section .options{
+        margin-top: 20px;
+    }
+
+
+    .banner-section .lead{
+        font-size: 2em;
+    }
+
+    header nav ul{
+        margin-bottom: 30px;
+        margin-left: 0;
+    }
+
+    .banner-section p{
+        margin-right: 60px;
+    }
+}
+
+
+@media (min-width: 540px) and (max-width: 600px){
+    .banner-section{
+        background: url(../images/banner_medium.jpg);
+        background-position: 60%;
+    }
+}
+
+@media (max-width: 300px){
+    .banner-section{
+        background: url(../images/banner_small.jpg);
+        background-position: 60%;
+        text-align: left;
+        padding-left: 5px;
+    }
+
+    .btn{
+        padding: 7px;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        border-radius: 5%;
+        background: #1F75FE;
+        color: white;
+        transition: 0.5s;
+    }
+
+    .txt-white{
+        color: white;
+    }
+
+    header nav ul{
+        display: flex;
+        gap: 7px;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+}
+
+
+/*About Section*/
+.about{
+    margin-top: 5rem;
+}
+
+.about-us-content{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+@media (max-width: 550px){
+    .about-us-content{
+        flex-direction: column;
+    }
+}
+
+
+/*Features Section*/
+.features{
+    margin-top: 5rem;
+}
+
+.features i{
+    font-size: 50px;
+    color: black;
+    text-align: center;
+}
+
+.item{
+    text-align: center;
+    margin: 20px;
+}
+
+.item p{
+    text-align: justify;
+}
+
+.item a{
+    margin-top: 20px;
+    color: #1F75FE;
+}
+
+.features-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+    
+}
+
+@media (max-width: 550px){
+    .features-content{
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    }
+}
+
+/*Get started section*/
+
+.get-started{
+    height: 30%;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 15px;
+    color: aliceblue;
+    padding-bottom: 15px;
+    margin-top: 5rem;
+}
+
+.get-started p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.get-started .btn{
+    padding: 20px;
+    padding: 20px 40px;
+}
+
+/*Footer Section*/
+
+footer{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    width: 100%;
+    bottom: 0;
+
+}
+
+footer h1{
+    font-size: 25px;
+    font-family: Parisienne;
+    font-weight: 700;
+    color: rgb(252, 105, 252);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.social-media{
+    font-size: 30px;
+    color: aliceblue;
+    display: flex;
+    gap: 20px;
+}
+
+.dev-contact{
+    color: aliceblue;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/*Journal Section*/
+.journal .body{
+    text-align: left;
+}
+
+.date{
+    text-align: right !important;
+}
+
+.item .operations{
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.item .operations a{
+    margin-top: 0;
+}
+
+.create-note * {
+    width: 100%;
+}
+
+.create-note{
+    margin: 10 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.create-note *:focus{
+    outline: none !important;
+}
+
+.create-note .file-input{
+    border: 0;
+}
+
+.create-note .btn{
+    border-radius: 10px;
+}
+
+/*Login Section*/
+.user-form{
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.login-form *{
+    width: 100%;
+}
+
+.login-form a{
+    color: #1F75FE;
+}
