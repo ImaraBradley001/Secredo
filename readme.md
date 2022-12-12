@@ -8,6 +8,15 @@ Secredo is an online diary app that allows users to easily write and manage thei
 ## Preview
 ![alt text](https://github.com/ImaraBradley001/Secredo/raw/master/preview/1.png)
 
+## Features
+* Awesome User Experience
+* Daily reminders
+* Full time access
+* Reliable journal search
+* Privacy
+* Military Grade Encryption
+
+
 ## Authors
 
 Imara Bradley -> imarabradley2@gmail.com
